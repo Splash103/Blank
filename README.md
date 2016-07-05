@@ -1,12 +1,6 @@
--- This script was made on 7/5/2016 -- eh this costed us asf so dont go yolo and leak it skrub
---you'll figure out password. Password:LolNoSKIDGtfoOfMyScriptFailMuch?
--- Kugleblitz SUITE Made by 
--- LegendOfDarknees,rtrn,RabidCris,Owogorga
--- Version 21.0 Beta
---No leaking or ill come to ur house today and break ur legs m8 and piss in your shower----Password is http://hastebin.com/boqofiguto.ini
---and sell you to teh blakmarget >:D -- nopls plsno
-
-admins = ("LegendOfDarknees"),("RabidCris"),("rtrn"),("owogorga123456") 
+-- had to remove because it caused errors. s0wwi 3:(only title)
+-- goto lines 165 to change the /e (It runs the command under /e (Example: /e :kill all))
+admins = ("LegendOfDarknees"),("RabidCris"),("rtrn"),("owogorga123456")
 banned = ("")
 prefix = ":" -- don't remove the prefix m8
 -------------------------------------------------------------------------------------------------------------------------------
@@ -168,7 +162,7 @@ end
 
 function do_exec(str,plr)
     if not isAdmin(plr.Name) then return end
-    str=str:gsub("/e ","") -- uses /e to run a command
+    str=str:gsub("/ ","") -- uses / to run a command
     local t = getprfx(str)
     if t == nil then return end
     str=str:sub(t[2])
@@ -200,4 +194,100 @@ end
 function addCommand(name,desc,allias,func)
     cmds[#cmds+1] =
     {
-        NAME =
+        NAME = name;
+        DESC = desc;
+        ALIAS = alias;
+        FUNC = func;
+    }
+end
+
+local function getPlayer(name)
+    local nameTable = {}
+    name = name:lower()
+    if name == "me" then
+        return (admin)
+        elseif name == "others" then
+        for i,v in pairs(gPlayers:GetChildren()) do
+    if v:IsA"Player" then
+    if v.Name ~= admin
+--Sup guys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
