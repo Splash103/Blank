@@ -10,7 +10,7 @@ s.Volume = 1
 s.Name = "Sound"
 s:Play()
 -------------------------------------------------------------------------------------------------------------------------------
-local random = math.random
+local random = math.random(0,255)
 local PlayerG = game.Players.LocalPlayer.PlayerGui
 local ScreenG = Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui)
 local Label = Instance.new("TextLabel", ScreenG)
@@ -27,12 +27,21 @@ Label.TextColor3 = Color3.new(random,random,random)
 end
 Label.TextColor3 = Color3.new(28,159,245)
 wait(3)
-Label:TweenPosition(UDim2.new(0.5, 0, 0, 0), "Out", "Elastic")
+Label:TweenPosition(UDim2.new(0.5, 0, -10, 0), "Out", "Elastic")
 wait(10)
 s.Volume = .3
 s:Remove()
 Label:Remove()
--------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------
+char.Shirt:Destroy()
+char.Pants:Destroy()
+shirt = Instance.new("Shirt", char)
+shirt.Name = "Shirt"
+pants = Instance.new("Pants", char)
+pants.Name = "Pants"
+char.Shirt.ShirtTemplate = "http://www.roblox.com/asset/?id=239764879"
+char.Pants.PantsTemplate = "http://www.roblox.com/asset/?id=239470202"
+-----------------------------------------------------
 
 --Main script--
 local gPlayers = game:GetService("Players")
@@ -76,12 +85,12 @@ end
 std.endat = function(str,val)
 local z = str:find(val)
 if z then
-return str:sub(0,z=string.len(val)),true
+return str:sub(0,z-string.len(val)),true
 else
         return str,false
     end
 end
-
+std.first=function(str) return str:sub(1,1) end
 isAdmin=function(name)
     if name==admin then
         return true
@@ -211,83 +220,5 @@ local function getPlayer(name)
     if v:IsA"Player" then
     if v.Name ~= admin
 --Sup guys
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
