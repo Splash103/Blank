@@ -82,12 +82,12 @@ else
     end
 end
 
-isAdmin = function(name)
-if name == admin then
-return true
-elseif admins[name] == true then
-return true
-        end
+isAdmin=function(name)
+    if name==admin then
+        return true
+    elseif admins[name]==true then
+        return true
+    end
     return false
 end
 
